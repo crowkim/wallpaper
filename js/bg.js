@@ -6,7 +6,7 @@ const imgNumber = 6;
 
 function paintImg(imgNumber){
     const img = new Image();
-    img.src =`img/${imgNumber+1}.jpg`;
+    img.src =`https://raw.githubusercontent.com/crowkim/wallpaper/master/img/${imgNumber+1}.JPG`;
     body.prepend(img); 
     img.classList.add("bgImg");
 }
