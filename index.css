@@ -1,3 +1,8 @@
+*{margin: 0; padding: 0; font-family: 'Noto Sans', sans-serif; text-shadow: 3px 3px 3px rgba(0,0,0,0.2);}
+input{border: none; background:none; text-align: center;}
+ul{list-style-type: none;}
+button{ border: none; background: none; cursor: pointer;}
+
 body{
     height: 100%;
     overflow: hidden;
@@ -8,17 +13,38 @@ body{
     animation: fadeIn 0.5s linear;
 }
 
-.form{
-    display: none;
-}
+.container{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.main{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;
+    font-size: 30px; color: #fff;background-color: rgba(0,0,0,0.5); border-radius: 8px; padding: 20px 40px;}
 
-.greetings{
-    display: none;
-}
+.search{background-color: rgba(0,0,0,0.3); border-radius: 8px; padding: 10px;position: absolute; top: 150px; left: -80px;}
+.search form{display: flex; justify-content: center;}
+.search form input{color: #fff; width: 280px;}
+.search form input::-webkit-input-placeholder{color: #fff; }
+.search form button{width: 18px; height: 18px;}
 
-.showing{
-    display: block;
-}
+.clock{}
+.clock h1{color: #fff; font-size: 100px;}
+
+.form{display: none;}
+.form div{padding: 10px 0;}
+.form input{font-size: 30px; color: #fff;}
+.form input::-webkit-input-placeholder {color: #fff; font-size: 30px;}
+
+.toDo{position: absolute; top: -129px; left: 260px; text-align: center; background-color: rgba(0,0,0,0.5); border-radius: 8px; padding: 20px;}
+.toDo h2{color: #fff; margin-bottom: 15px;}
+.toDoForm input{color: #fff;background-color: rgba(0,0,0,0.5); border-radius: 8px; padding: 10px; margin-bottom: 15px;}
+.toDoForm input::-webkit-input-placeholder{color: #fff; }
+
+.toDoList{}
+.toDoList li{margin-bottom: 15px;}
+.toDoList li button{float: right;margin-top: 2px;}
+.toDoList li span{color: #fff;}
+
+.weather{padding: 20px; position: absolute; top: -245px; right: 137px; background-color: rgba(0,0,0,0.5); color: #fff; font-size: 20px; border-radius: 8px; text-align: center;}
+
+.greetings{display: none;}
+.showing{display: block;}
 
 .bgImg{
     position: absolute;

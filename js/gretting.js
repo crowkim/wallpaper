@@ -17,6 +17,7 @@ function handleSubmit(event){
 }
 
 function askForName(){
+    greeting.classList.remove(show);
     form.classList.add(show);
     form.addEventListener("submit", handleSubmit);
 }
@@ -24,7 +25,8 @@ function askForName(){
 function paintGreeting(text){
     form.classList.remove(show)
     greeting.classList.add(show)
-    greeting.innerText = `Hello ${text}`
+    greeting.innerText = `Have a nice day!
+    ${text}`
 }    
 
 function loadName(){
@@ -36,7 +38,12 @@ function loadName(){
     }
 }
 
+function changeName(){
+    greeting.addEventListener("dblclick", askForName);
+}
+
 function init(){
     loadName();
+    changeName();
 }
 init();
